@@ -1,7 +1,19 @@
 <html>
 <head>
+    <meta charset='utf-8'>
     <style>
-        #grid {
+        #grid01 {
+            display:grid;
+            grid-template-columns:1fr 100px 100px 100px 100px;
+        }
+        #grid01 h4 {
+            text-align: center;
+            border: 1px solid grey;
+            margin: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #grid02 {
             display:grid;
             grid-template-columns:1fr 1fr 1fr 1fr;
         }
@@ -12,26 +24,69 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        a {
+            text-decoration:none;
+        }
     </style>
+
 
 </head>
 
 
 <body>
-    <div id='grid'>
-        <h2>Engineering</h2>
-
-
-
-        <h2>Design</h2>
-        
-        
-        
-        <h2>Business</h2>
-        
-        
-        
-        <h2>Staff</h2>
+    <div id='grid01'>
+        <h4></h4>
+        <h4>회사소개</h4>
+        <h4>채용</h4>
+        <h4>FAQ</h4>
+        <h4>Eng</h4>
     </div>
+    <div id='grid02'>
+        <a href='#Engineering'><h2>Engineering</h2></a>
+        <a href='#Design'><h2>Design</h2></a>
+        <a href='#Business'><h2>Business</h2></a>
+        <a href='#Staff'><h2>Staff</h2></a>   
+    </div>
+        <div id='Engineering'>
+            <script>
+                var Engineering=['Backend','Frontend','Big Data','Client']
+                var i=0;
+                while(i<Engineering.length){
+                    document.write('<h4>'+Engineering[i]+'</h4>');
+                    i=i+1;
+                }
+                </script>
+        </div>
+        <div id='Design'>
+            <script>
+            var Design=['UX','UI','GUI']
+            var i=0;
+            while(i<Design.length){
+                document.write('<h4>'+Design[i]+'</h4>');
+                i=i+1;
+            }
+            </script>
+        </div>
+        <div id='Business'>
+                <script>
+                    var Business=['Business Development','Business Operation']
+                    var i=0;
+                    while(i<Business.length){
+                        document.write('<h4>'+Business[i]+'</h4>');
+                        i=i+1;
+                    }
+                </script>
+        </div>
+        <div id='Staff'>
+                <script>
+                    var Staff=['Finance','Planning','HR']
+                    var i=0;
+                    while(i<Staff.length){
+                        document.write('<h4>'+Staff[i]+'</h4>');
+                        i=i+1;
+                    }
+                </script>
+        </div>
+
 </body>
 </html>
