@@ -1,0 +1,48 @@
+<head>
+<script>
+    var menu = {
+        EngPosition:function (){
+            var Engineering=['Backend','Frontend','Big Data','Client']
+            var i=0;
+            while(i<Engineering.length){
+                document.write('<h4>'+Engineering[i]+'</h4>');
+                i=i+1;
+            }
+        },
+        UXPosition:function (){
+            var Design=['UX','UI','GUI']
+            var i=0;
+            while(i<Design.length){
+                document.write('<h4>'+Design[i]+'</h4>');
+                i=i+1;
+            }
+        },
+        BizPosition:function(){
+            var Business=['Business Development','Business Operation']
+            var i=0;
+            while(i<Business.length){
+                document.write('<h4>'+Business[i]+'</h4>');
+                i=i+1;
+            }
+        },
+        StaffPosition:function(){
+                    var Staff=['Finance','Planning','HR']
+                    var i=0;
+                    while(i<Staff.length){
+                        document.write('<h4>'+Staff[i]+'</h4>');
+                        i=i+1;
+                    }
+        }
+    }
+</script>
+</head>
+<body>
+    
+<script>
+        menu.EngPosition();
+        menu.UXPosition();
+        menu.BizPosition();
+        menu.StaffPosition();
+
+</script>
+</body>
